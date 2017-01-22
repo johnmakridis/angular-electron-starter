@@ -1,12 +1,12 @@
 {
-  "name": "eclipsys-myoffice",
-  "description": "Eclipsys MyOffice",
+  "name": "angular-electron-starter",
+  "description": "Angular-Electron desktop application starter kit",
   "main": "main.js",
   "authors": [
     "John Makridis"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/johnmakridis/angular-electron-starter",
   "private": true,
   "ignore": [
     "**/.*",

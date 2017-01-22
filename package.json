@@ -1,23 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "angular-electron-starter",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Angular-Electron desktop application starter kit",
   "main": "./app/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "build --dir",
     "dist": "build"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/johnmakridis/angular-electron-starter",
   "keywords": [
     "Electron",
-    "quick",
+    "Angular",
     "start",
-    "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "John Makridis",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^1.4.1",
     "electron-builder": "^11.4.4",
@@ -28,7 +27,7 @@
     "rcedit": "^0.3.0"
   },
   "build": {
-      "appId": "eclipsys-myoffice",
+      "appId": "angular-electron-starter",
       "mac": {
           "category": "Tools"
           },
