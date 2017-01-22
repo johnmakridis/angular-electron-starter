@@ -1,0 +1,40 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-builder": "^11.4.4",
+    "gulp": "^3.9.0",
+    "fs-jetpack": "^0.7.0",
+    "asar": "^0.7.2",
+    "q": "^1.4.1",
+    "rcedit": "^0.3.0"
+  },
+  "build": {
+      "appId": "eclipsys-myoffice",
+      "mac": {
+          "category": "Tools"
+          },
+        "win": {
+            "iconUrl": "https://dev.eclipsys.gr/icon.ico"
+        }
+    }
+
+}

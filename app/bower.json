@@ -1,0 +1,25 @@
+{
+  "name": "eclipsys-myoffice",
+  "description": "Eclipsys MyOffice",
+  "main": "main.js",
+  "authors": [
+    "John Makridis"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-animate": "1.5.9",
+    "angular-aria": "1.5.9",
+    "angular-material": "~0.10.1",
+    "angular-route": "~1.4.4"
+  }
+}
