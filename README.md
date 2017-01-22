@@ -2,6 +2,7 @@
 
 **Angular-Material & Electron desktop application starter kit**
 
+### Usage
 ```bash
 # Clone this repository
 git clone https://github.com/johnmakridis/angular-electron-starter
@@ -17,6 +18,13 @@ bower install
 cd ..
 # Run the app
 npm start
+```
+
+### Build
+```bash
+npm run dist
+
+Executable & Setup files will placed in /dist folder
 ```
 
 ### Licence
