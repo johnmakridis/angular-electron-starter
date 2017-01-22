@@ -19,4 +19,6 @@ cd ..
 npm start
 ```
 
-####
+### Licence
+<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>
+
