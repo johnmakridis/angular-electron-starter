@@ -29,5 +29,5 @@ npm run dist
 
 
 ### Licence
-<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>
+<a href="https://github.com/johnmakridis/angular-electron-starter/blob/master/LICENSE" target="_blank">MIT License</a>
 
