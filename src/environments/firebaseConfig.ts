@@ -1,11 +1,11 @@
 
 export let firebaseConfig: any = {
     config: {
-        apiKey: 'AIzaSyBgTaMPxSz5F8u4dbjuxTVfnBmtkQUmrCg',
-        authDomain: 'project-myoffice.firebaseapp.com',
-        databaseURL: 'https://project-myoffice.firebaseio.com',
-        projectId: 'project-myoffice',
-        storageBucket: 'project-myoffice.appspot.com',
-        messagingSenderId: '753746070631'
+        apiKey: 'FIREBASE_API_KEY',
+        authDomain: 'FIREBASE_AUTH_DOMAIN',
+        databaseURL: 'FIREBASE_DATABASE_URL',
+        projectId: 'FIREBASE_PROJECT_ID',
+        storageBucket: 'FIREBASE_STORAGE_BUCKET',
+        messagingSenderId: 'FIREBASE_MESSAGING_SENDER_ID'
     }
 };

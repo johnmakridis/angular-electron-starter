@@ -1,11 +1,11 @@
-import { Injectable } from "@angular/core";
-import * as firebase from "firebase/app";
-import { EventEmitter } from "@angular/core";
-import { LocalStorageService } from "ngx-webstorage";
+import { Injectable } from '@angular/core';
+import * as firebase from 'firebase/app';
+import { EventEmitter } from '@angular/core';
+import { LocalStorageService } from 'ngx-webstorage';
 
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class AuthService {
   events: any = new EventEmitter();
@@ -18,7 +18,7 @@ export class AuthService {
     return new Promise(async (resolve, reject) => {
       try {
         const loginResponse: any = await firebase.auth().signInWithEmailAndPassword(credentials.email, credentials.password);
-        await this.storage.store("user", loginResponse.user);
+        await this.storage.store('user', loginResponse.user);
         return resolve(loginResponse);
       } catch (error) {
         return reject(error);
@@ -29,11 +29,11 @@ export class AuthService {
   doRegisterWithEmaillPassword(newUser: any) {
     return new Promise(async (resolve, reject) => {
       if (newUser.password !== newUser.repeatPassword)
-        return reject("passwords_not_same");
+        return reject('passwords_not_same');
       else
         try {
           const registerResponse: any = await firebase.auth().createUserWithEmailAndPassword(newUser.email, newUser.password);
-          await this.storage.store("user", registerResponse.user);
+          await this.storage.store('user', registerResponse.user);
           return resolve(registerResponse);
         } catch (error) {
           return reject(error);
@@ -67,7 +67,7 @@ export class AuthService {
   }
 
   async isAuthenticated(): Promise<Boolean> {
-    const user: any = await this.storage.retrieve("user");
+    const user: any = await this.storage.retrieve('user');
     if (user && user.email)
       return Promise.resolve(true);
     else
@@ -76,12 +76,12 @@ export class AuthService {
 
 
   async getUser(): Promise<any> {
-    const user: any = await this.storage.retrieve("user");
+    const user: any = await this.storage.retrieve('user');
     return Promise.resolve(user);
   }
 
   async doLogout(): Promise<any> {
-    await this.storage.clear("user");
+    await this.storage.clear('user');
     return Promise.resolve();
   }
 }
