@@ -1,0 +1,37 @@
+{
+    "pages": {
+        "root": {
+            "title": "Home"
+        },
+        "home": {
+            "title": "Dashboard"
+        },
+        "tasks": {
+            "title": "Tasks"
+        },
+        "projects": {
+            "title": "Projects"
+        }
+    },
+    "actions": {
+        "projects": {
+            "new": "New Project"
+        },
+        "tasks": {
+            "new": "New Task",
+            "add": "Add Task"
+        },
+        "auth": {
+            "logout": {
+                "title": "Logout"
+            }
+        }
+    },
+    "sidebar": {
+        "dividers": {
+            "project_management": {
+                "title": "Project Management"
+            }
+        }
+    }
+}

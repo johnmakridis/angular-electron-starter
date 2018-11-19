@@ -1,0 +1,64 @@
+mat-toolbar.app-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-is-mobile mat-toolbar.app-header{ position: fixed; z-index: 2;}
+h1.app-name {margin-left: 8px;}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+mat-sidenav-container{
+    position: absolute;
+    top: 56px;
+    bottom: 0px; // add 60px for footer needed
+    left: 0;
+    right: 0;
+}
+
+mat-sidenav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+mat-toolbar.app-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+mat-sidenav-content{
+    padding: 4px 20px;
+}
+
+.sidenav-container{
+    z-index: -1 !important;
+}
+
+
+.example-is-mobile mat-sidenav-container{flex: 1 0 auto;}
+.mat-toolbar-row, .mat-toolbar-single-row{height: 56px;}
+button.sidebar-item{
+    width: 100%;
+    text-align: left;
+}
+
+.empty-space{flex: 1 1 auto;}
+
+
+@media only screen and (min-width: 601px) {
+    .sidenav-toggler{margin-left: 8px;}
+}

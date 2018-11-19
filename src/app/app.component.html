@@ -1,0 +1,59 @@
+<ng-container class="app-container">
+
+  <!-- Header -->
+  <mat-toolbar class="app-header mat-elevation-z4" color="primary" layout="row">
+    <button mat-icon-button class="sidenav-toggler" (click)="sidebar.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="app-name"><a class="mat-button" [routerLink]="[ '' ]">Angular App</a></h1>
+    <span class="empty-space"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+
+    <!-- Sidenav -->
+    <mat-sidenav #sidebar [mode]="mobileQuery.matches ? 'over' : 'side'" [opened]="!mobileQuery.matches" class="app-sidenav" [fixedInViewport]="options.value.fixed"
+      [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+
+      <!-- Sidenav items -->
+      <mat-list>
+        <mat-list-item>
+          <button mat-button class="sidebar-item" [routerLink]="['']" routerLinkActive="active">Home</button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button class="sidebar-item" [routerLink]="['/page1']" routerLinkActive="active">Page1</button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button class="sidebar-item" [routerLink]="['/page2']" routerLinkActive="active">Page2</button>
+        </mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+
+    <!-- Content -->
+    <mat-sidenav-content [formGroup]="options">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- Footer -->
+  <!-- <mat-toolbar class="app-footer">Footer</mat-toolbar> -->
+
+</ng-container>
