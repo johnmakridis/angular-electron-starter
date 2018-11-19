@@ -1,8 +1,0 @@
-{
-  "name": "angular-electron-starter",
-  "version": "0.0.0",
-  "description": "Angular-Electron desktop application starter kit",
-  "author": "John Makridis",
-  "main": "main.js",
-  "repository": "https://github.com/johnmakridis/angular-electron-starter"
-}
