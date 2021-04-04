@@ -55,7 +55,6 @@ You can disable "Developer Tools" by commenting `win.webContents.openDevTools();
 ## Browser mode
 
 Maybe you want to execute the application in the browser with hot reload ? You can do it with `npm run ng:serve:web`.  
-Note that you can't use Electron or NodeJS native libraries in this case. Please check `providers/electron.service.ts` to watch how conditional import of electron/Native libraries is done.
 
 
 ## Included Commands
