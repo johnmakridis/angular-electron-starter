@@ -9,11 +9,11 @@ This repository is based on [angular-electron](https://github.com/maximegris/ang
 
 Currently runs with:
 
-- Angular v7.0.4
-- Angular Material v7.0.4
-- Firebase v5.5.6
-- Electron v3.0.6
-- Electron Builder v20.29.0
+- Angular v11.2.7
+- Angular Material v11.2.7
+- Firebase v8.3.2
+- Electron v12.0.2
+- Electron Builder v22.10.5
 
 With this sample, you can :
 
@@ -52,26 +52,26 @@ The application code is managed by `main.ts`. In this sample, the app runs with 
 The Angular component contains an example of Electron and NodeJS native lib import.  
 You can disable "Developer Tools" by commenting `win.webContents.openDevTools();` in `main.ts`.
 
+## Browser mode
+
+Maybe you want to execute the application in the browser with hot reload ? You can do it with `npm run ng:serve:web`.  
+Note that you can't use Electron or NodeJS native libraries in this case. Please check `providers/electron.service.ts` to watch how conditional import of electron/Native libraries is done.
+
+
 ## Included Commands
 
 |Command|Description|
 |--|--|
-|`npm run ng:serve:web`| Execute the app in the browser |
+|`npm run ng:serve`| Execute the app in the browser |
 |`npm run build`| Build the app. Your built files are in the /dist folder. |
 |`npm run build:prod`| Build the app with Angular aot. Your built files are in the /dist folder. |
 |`npm run electron:local`| Builds your application and start electron
-|`npm run electron:linux`| Builds your application and creates an app consumable on linux system |
-|`npm run electron:windows`| On a Windows OS, builds your application and creates an app consumable in windows 32/64 bit systems |
-|`npm run electron:mac`|  On a MAC OS, builds your application and generates a `.app` file of your application that can be run on Mac |
+|`npm run electron:build`| Builds your application and creates an app consumable based on your operating system |
+
 
 **Your application is optimised. Only /dist folder and node dependencies are included in the executable.**
 
 ## You want to use a specific lib (like rxjs) in electron main thread ?
 
-You can do this! Just by importing your library in npm dependencies (not devDependencies) with `npm install --save`. It will be loaded by electron during build phase and added to the final package. Then use your library by importing it in `main.ts` file. Easy no ?
-
-## Browser mode
-
-Maybe you want to execute the application in the browser with hot reload ? You can do it with `npm run ng:serve:web`.  
-Note that you can't use Electron or NodeJS native libraries in this case. Please check `providers/electron.service.ts` to watch how conditional import of electron/Native libraries is done.
+YES! You can do it! Just by importing your library in npm dependencies section (not devDependencies) with `npm install --save`. It will be loaded by electron during build phase and added to your final package. Then use your library by importing it in `main.ts` file. Quite simple, isn't it?
 
