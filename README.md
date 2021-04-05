@@ -72,5 +72,5 @@ Maybe you want to execute the application in the browser with hot reload ? You c
 YES! You can do it! Just by importing your library in npm dependencies section (not devDependencies) with `npm install --save`. It will be loaded by electron during build phase and added to your final package. Then use your library by importing it in `main.ts` file. Quite simple, isn't it?
 
 
-
+## Preview
 ![Preview](./preview.png)
