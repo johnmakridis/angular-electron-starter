@@ -1,8 +1,6 @@
 # Introduction
 
-Bootstrap and package your project with Angular 7 and Electron (Typescript + SASS + Hot Reload) for creating Desktop applications.
-
-This repository is based on [angular-electron](https://github.com/maximegris/angular-electron) by [Maxime Gris](https://github.com/maximegris) with extra additions the [@angular/material](https://github.com/angular/material2) and [firebase](https://github.com/firebase/firebase-js-sdk) modules.
+Cross-platform desktop applications development with Angular 11 & Electron.
 
 Currently runs with:
 
@@ -74,3 +72,6 @@ YES! You can do it! Just by importing your library in npm dependencies section (
 
 ## Preview
 ![Preview](./preview.png)
+
+
+This repository is based on [angular-electron](https://github.com/maximegris/angular-electron) by [Maxime Gris](https://github.com/maximegris) with extra additions the [@angular/material](https://github.com/angular/material2) and [firebase](https://github.com/firebase/firebase-js-sdk) modules.
